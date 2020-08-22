@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hello, World</title>
+    <link rel="stylesheet" href="../css/01-手机页面.css">
+
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+
+        #container {
+            height: 50%
+        }
+
+        input {
+            position: absolute;
+            z-index: 999999999;
+
+            left: 34px;
+            width: 80%;
+            height: 30px;
+        }
+
+
+        .search {
+            background-color: black;
+            opacity: 0.3;
+            height: 30px;
+            width: 80%;
+            position: relative;
+            left: 10%;
+            top: 50px;
+            border-radius: 15px;
+            z-index: 999999999;
+        }
+
+        .search>input {
+            height: 30px;
+            /* 100% = search.width = 80% */
+            width: calc(100% - 40px);
+            border: 0;
+            outline: none;
+            padding-left: 20px;
+            /* transparent无色 */
+            background-color: transparent;
+            color: white;
+            /* 将内边距的大小算到内容中去 */
+            box-sizing: border-box;
+        }
+
+        .search-icon {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url(./css/icon_btn_serach.png);
+            background-size: 100% 100%;
+            position: relative;
+            left: 12px;
+            top: 5px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: -20px;
+            font-size: large;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .address01 {
+            position: relative;
+            width: 100%;
+            height: 120px;
+        }
+
+        .address01>img {
+            width: 33%;
+            height: 100px;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .address01>img:nth-of-type(2) {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 28px;
+            left: 135px;
+        }
+
+        .stars {
+            float: right;
+            margin-top: 70px;
+            margin-right: 107px;
+
+        }
+
+        .stars>span {
+            color: yellow;
+            margin-top: 56px;
+
+        }
+
+
+        .star {
+            width: 20px;
+            height: 20px;
+            margin: -10px 1px 0 0;
+
+        }
+
+        span {
+            position: absolute;
+            top: 10px;
+
+        }
+
+        span:nth-of-type(2) {
+            position: absolute;
+            top: 36px;
+            left: 169px;
+        }
+
+        span:nth-of-type(3) {
+            position: absolute;
+            top: 96px;
+            left: 145px;
+            font-size: small;
+        }
+
+        hr {
+            position: absolute;
+            width: 100%;
+            bottom: -10px;
+            color: gainsboro;
+        }
+
+        a {
+            margin-left: 35px;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+        }
+
+        .footer-img {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .footer-img>img {
+            margin-left: 40px;
+        }
+
+        .footer-img>span {
+            float: left;
+            margin-bottom: -30px;
+        }
+        .span >span{
+            position: absolute;
+            z-index: 999999999;
+            top: 790px;
+            left: 43px;
+        }
+        .span >span:nth-of-type(2){
+      
+            left: 110px;
+        }
+        .span >span:nth-of-type(3){
+        
+            left: 208px;
+        }
+        .span >span:nth-of-type(4){
+        
+            left: 283px;
+        }
+    </style>
+
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=28QgxaASIifH99kfREgy2GYpRHukDzGj">
+        </script>
+</head>
+
+<body>
+    <div class="title">查看附近的机构</div>
+    <div class="search">
+        <span class="search-icon"></span>
+        <input type="text" placeholder="医生(科室)/商品名、体检项目">
+    </div>
+    <div id="container">
+
+    </div>
+
+    <div class="address01">
+        <img src="./css/jigou_huangjin1.png" alt="">
+        <span>莆田仙游县门诊中心</span>
+        <img src="./css/GPS.png" alt="">
+        <span>2.1km</span>
+        <div class="stars">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <span>(5.0)</span>
+        </div>
+        <span>地址: 仙游县枫亭枫江北路2008号</span>
+        <hr>
+
+
+    </div>
+    <div class="address01">
+        <img src="./css/jigou_huangjin2.png" alt="">
+        <span>莆田仙游县门诊中心</span>
+        <img src="./css/GPS.png" alt="">
+        <span>2.1km</span>
+        <div class="stars">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <span>(5.0)</span>
+        </div>
+        <span>地址: 仙游县枫亭枫江北路2008号</span>
+        <hr>
+    </div>
+    <div class="address01">
+        <img src="css/yiyuan_huangjin.png" alt="">
+        <span>莆田仙游县门诊中心</span>
+        <img src="./css/GPS.png" alt="">
+        <span>2.1km</span>
+        <div class="stars">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <img class="star" src="./css/star.png" alt="">
+            <span>(5.0)</span>
+        </div>
+        <span>地址: 仙游县枫亭枫江北路2008号</span>
+        <hr>
+    </div>
+
+
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMapGL.Map("container");
+        var point = new BMapGL.Point(116.331398, 39.897445);
+        map.centerAndZoom(point, 12);
+
+        var geolocation = new BMapGL.Geolocation();
+        geolocation.getCurrentPosition(function (r) {
+
+            console.log(r)
+            console.log(this.getStatus())
+
+            // if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMapGL.Marker(r.point);
+            map.addOverlay(mk);
+            map.panTo(r.point);
+            alert('您的位置：' + r.point.lng + ',' + r.point.lat);
+            // }
+            // else {
+            // 	alert('failed'+this.getStatus());
+            // }        
+        }, { enableHighAccuracy: true })
+	//关于状态码
+	//BMAP_STATUS_SUCCESS	检索成功。对应数值“0”。
+	//BMAP_STATUS_CITY_LIST	城市列表。对应数值“1”。
+	//BMAP_STATUS_UNKNOWN_LOCATION	位置结果未知。对应数值“2”。
+	//BMAP_STATUS_UNKNOWN_ROUTE	导航结果未知。对应数值“3”。
+	//BMAP_STATUS_INVALID_KEY	非法密钥。对应数值“4”。
+	//BMAP_STATUS_INVALID_REQUEST	非法请求。对应数值“5”。
+	//BMAP_STATUS_PERMISSION_DENIED	没有权限。对应数值“6”。(自 1.1 新增)
+	//BMAP_STATUS_SERVICE_UNAVAILABLE	服务不可用。对应数值“7”。(自 1.1 新增)
+	//BMAP_STATUS_TIMEOUT	超时。对应数值“8”。(自 1.1 新增)
+    </script>
+   
+
+
+
+
+
+</html>

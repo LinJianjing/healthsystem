@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./img/index.css" />
+	</head>
+	<body>
+		<iframe src="./home/index.html" frameborder="0" name="content"></iframe>
+		<footer class="">
+			<a href="./home/index.html" id="active" class="icons" target="content">
+				<img src="./img/tabbar/web/tabbar_btn_index_sel.png" alt="" data-src="./img/tabbar/web/tabbar_btn_index_nor.png">
+				<span class="tx_title">首页</span>
+			</a>
+			<a href="./mall/index.html" class="icons" target="content">
+				<img src="./img/tabbar/web/tabbar_btn_mall_nor.png" alt="" data-src="./img/tabbar/web/tabbar_btn_mall_sel.png">
+				<span class="tx_title">健康商城</span>
+			</a>
+			<a href="./pos/index.html" class="icons" target="content">
+				<img src="./img/tabbar/web/tabbar_btn_gps_nor.png" alt="" data-src="./img/tabbar/web/tabbar_btn_gps_sel.png">
+				<span class="tx_title">定位</span>
+			</a>
+			<a href="./mine/index.html" class="icons" target="content">
+				<img src="./img/tabbar/web/tabbar_btn_my_nor.png" alt="" data-src="./img/tabbar/web/tabbar_btn_my_sel.png">
+				<span class="tx_title">我的</span>
+			</a>
+		</footer>
+		<script type="text/javascript">
+			// 找A标签
+			var as = document.querySelectorAll(' footer > a');
+			var imgs = document.querySelectorAll('footer>a>img');
+			var index = 0;
+
+
+			for (var i = 0; i < as.length; i++) {
+				as[i].index = i;
+				as[i].onclick = function() {
+					var src = imgs[this.index].src;
+					var datasrc = imgs[this.index].dataset.src;
+					imgs[this.index].src = datasrc;
+					imgs[this.index].setAttribute('data-src', src);
+
+					var src = imgs[index].src;
+					var datasrc = imgs[index].dataset.src;
+					imgs[index].src = datasrc;
+					imgs[index].setAttribute('data-src', src);
+
+					as[index].id = '';
+					as[this.index].id = 'active';
+
+					index = this.index;
+				}
+			}
+		</script>
+	</body>
+</html>

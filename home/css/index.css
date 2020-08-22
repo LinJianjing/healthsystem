@@ -1,0 +1,485 @@
+body {
+   	margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+header>nav {
+    line-height: 50px;
+    text-align: center;
+}
+
+header>nav>img:nth-of-type(1) {
+    position: absolute;
+    left: 50px;
+    top: 22px;
+    width: 10px;
+    height: 5px;
+}
+
+header>nav>img:nth-of-type(2) {
+    position: absolute;
+    right: 15px;
+    top: 22px;
+    width: 10px;
+    height: 5px;
+}
+
+header>nav>span:nth-of-type(1) {
+    position: absolute;
+    left: 15px;
+}
+
+header>nav>span:nth-of-type(2) {
+    position: absolute;
+    right: 30px;
+}
+
+.content {
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.search {
+    background-color: black;
+    opacity: 0.3;
+    height: 30px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 20px;
+    border-radius: 15px;
+}
+
+.search>input {
+    height: 30px;
+    /* 100% = search.width = 80% */
+    width: calc(100% - 40px);
+    border: 0;
+    outline: none;
+    padding-left: 20px;
+    /* transparent无色 */
+    background-color: transparent;
+    color: white;
+    /* 将内边距的大小算到内容中去 */
+    box-sizing: border-box;
+}
+
+.search-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../img/home/icon_btn_serach.png);
+    background-size: 100% 100%;
+    position: relative;
+    left: 12px;
+    top: 5px;
+}
+
+.sign {
+
+    width: 100%;
+    height: 50px;
+    position: relative;
+
+}
+
+.sign>.list_icon_calendar {
+
+    display: inline-block;
+    background-image: url(../../img/list_icon_calendar.png);
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+.sign>.sign_text {
+    box-sizing: border-box;
+    line-height: 50px;
+    position: absolute;
+    font-size: small;
+}
+
+.sign>.icon_btn_signin {
+    background-image: url(../../img/icon_btn_signin.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    box-sizing: border-box;
+}
+
+hr {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    opacity: 0.2;
+}
+
+.img {
+    width: 100%;
+    height: 100px;
+    position: relative;
+
+    margin: 0;
+    display: inline-block;
+}
+
+.img>span {
+    position: absolute;
+    background-size: 100% 100%;
+    width: 55px;
+    height: 55px;
+}
+
+.img>span:nth-of-type(1) {
+    background-image: url(../../img/home/list_icon_service.png);
+    left: 20px;
+    top: 15px;
+}
+
+.img>span:nth-of-type(2) {
+    left: calc((100% - 20px)/4);
+    top: 15px;
+    background-image: url(../../img/home/list_icon_integral.png);
+}
+
+.img>span:nth-of-type(3) {
+    left: calc((100% - 55px)/2);
+    top: 15px;
+    background-image: url(../../img/home/list_icon_health.png);
+}
+
+.img>span:nth-of-type(4) {
+    right: calc((100% - 20px)/4);
+    top: 15px;
+    background-image: url(../../img/home/list_icon_consulting.png);
+}
+
+.img>span:nth-of-type(5) {
+    right: 20px;
+    top: 15px;
+    background-image: url(../../img/home/list_icon_Endorsement.png);
+}
+
+.img>.img_text {
+    font-size: small;
+    top: 120px;
+    position: relative;
+}
+
+.img>.img_text>span:nth-of-type(1) {
+    left: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.img>.img_text>span:nth-of-type(2) {
+    left: calc((75% - 10px)/3);
+    position: absolute;
+    bottom: 20px;
+}
+
+.img>.img_text>span:nth-of-type(3) {
+    left: calc((100% - 50px)/2);
+    position: absolute;
+    bottom: 20px;
+}
+
+.img>.img_text>span:nth-of-type(4) {
+    right: calc((100% + 30px)/4);
+    position: absolute;
+    bottom: 20px;
+}
+
+.img>.img_text>span:nth-of-type(5) {
+    right: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.bg_color {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+}
+
+.health_information {
+    position: relative;
+    background-color: white;
+    margin-top: 10px;
+    height: 80px;
+
+}
+
+.health_information>span:nth-of-type(1) {
+    font-weight: 300;
+    line-height: 80px;
+    margin-left: 10px;
+}
+
+.health_hr {
+    display: block;
+    height: 30px;
+    width: 1px;
+    background-color: gray;
+    position: absolute;
+    left: 85px;
+    top: 15px;
+}
+
+.health_information>span:nth-of-type(2) {
+    position: relative;
+    font-weight: 300;
+    opacity: 0.7;
+    top: -15px;
+    left: 20px;
+    font-size: small;
+}
+
+.health_information>span:nth-of-type(3) {
+    position: absolute;
+    font-weight: 300;
+    opacity: 0.7;
+    bottom: 22px;
+    left: 99px;
+    font-size: small;
+}
+
+.img_health {
+    margin-right: 15px;
+    margin-top: 30px;
+    float: right;
+    width: 8px;
+    height: 10px;
+}
+
+.check_a {
+    font-size: large;
+    background-color: white;
+    margin-top: 10px;
+    height: 170px;
+    width: 50%;
+    float: left;
+    z-index: 9999;
+}
+
+.check_a>span:nth-of-type(2) {
+    position: relative;
+    font-weight: 300;
+    font-size: x-small;
+    left: 5px;
+    top: 5px;
+}
+
+.check_a>span:nth-of-type(1) {
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.check_a>img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: calc(100% - 110px);
+}
+
+.check_b {
+    float: right;
+    background-color: white;
+    margin-top: 10px;
+    height: 80px;
+    width: 49%;
+}
+
+.check_b>span:nth-of-type(1) {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    z-index: 111;
+}
+
+.check_b>span:nth-of-type(2) {
+    position: relative;
+    font-weight: 300;
+    font-size: x-small;
+    left: 5px;
+    top: 5px;
+
+    z-index: 111;
+}
+
+.check_b>img {
+    right: 10px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+}
+
+
+.game {
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    background-color: white;
+    top: 285px;
+}
+
+.game>.a {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 20px;
+    width: 4px;
+}
+
+.game>.b {
+    left: 10px;
+    bottom: 20px;
+    width: 175px;
+    height: 100px;
+    position: absolute;
+}
+
+.game>.c {
+    float: right;
+    margin-right: 180px;
+    margin-top: 10px;
+    height: 20px;
+    width: 4px;
+}
+
+.game>.d {
+    right: 10px;
+    bottom: 20px;
+    width: 170px;
+    height: 100px;
+    position: absolute;
+}
+
+
+.game>span {
+    position: relative;
+    left: 5px;
+    top: 8px;
+}
+
+.game>span:nth-of-type(2) {
+    position: absolute;
+    left: calc((100% + 30px) /2);
+    top: 8px;
+}
+
+
+.footer {
+    position: relative;
+    float: left;
+    height: 0px;
+    width: 100%;
+    background-color: white;
+    margin-top: 190px;
+
+}
+
+.footer>.footer-content {
+
+    position: relative;
+    top: 18px;
+    font-size: small;
+    width: 100%;
+    height: 80px;
+}
+
+.footer>.footer-content>img {
+    float: left;
+    width: 28px;
+    height: 30px;
+    padding-left: 53px;
+}
+
+.footer>.footer-content>div {
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+
+a {
+    font-size: small;
+    position: absolute;
+    width: 51px;
+    height: 61px;
+}
+
+p {
+    float: left;
+    margin-top: 42px;
+    margin-left: 6px;
+    font-size: xx-small;
+}
+
+
+#p {
+    float: left;
+    margin-top: 40px;
+    margin-left: -5px;
+}
+#p1{
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.hover:nth-of-type(1):hover {
+    width: 36px;
+    height: 36px;
+    margin-right: 19px;
+    background-image: url(../../img/tabbar/web/tabbar_btn_index_sel.png);
+    color: green;
+
+    background-size: cover;
+    font-weight: 600;
+}
+.hover:nth-of-type(2):hover {
+   
+    width: 37px;
+    height: 38px;
+    margin-right: 18px;
+    background-image: url(./img/tabbar_btn_mall_sel.png);
+    color: green;
+    background-size: cover;
+  font-size: xx-small;
+    font-weight: 600;
+}
+.hover:nth-of-type(3):hover {
+    width: 34px;
+    height: 38px;
+    margin-right: 21px;
+    background-image: url(./img/tabbar_btn_gps_sel.png);
+    color: green;
+    
+    background-size: cover;
+    font-weight: 600;
+}
+.hover:nth-of-type(4):hover {
+    width: 31px;
+    height: 39px;
+    margin-right: 19px;
+    background-image: url(./img/tabbar_btn_my_sel.png);
+    color: green;
+    background-size: cover;
+    font-weight: 600;
+}

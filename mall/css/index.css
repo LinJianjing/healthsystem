@@ -1,0 +1,502 @@
+* {
+	/* 星号选择器 ，通配，所有标签可以选中  公有样式 */
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+header {
+	background-color: white;
+	border-bottom: 1px solid gainsboro;
+}
+
+header>nav {
+	line-height: 50px;
+	text-align: center;
+}
+
+header>nav>img:nth-of-type(1) {
+	position: absolute;
+	left: 50px;
+	top: 22px;
+	width: 10px;
+	height: 5px;
+}
+
+header>nav>img:nth-of-type(2) {
+	position: absolute;
+	right: 15px;
+	top: 22px;
+	width: 10px;
+	height: 5px;
+}
+
+header>nav>span:nth-of-type(1) {
+	position: absolute;
+	left: 15px;
+}
+
+header>nav>span:nth-of-type(2) {
+	position: absolute;
+	right: 30px;
+}
+
+
+
+.search {
+	background-color: black;
+	opacity: 0.3;
+	height: 30px;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	top: 20px;
+	border-radius: 15px;
+}
+
+.search>input {
+	height: 30px;
+	/* 100% = search.width = 80% */
+	width: calc(100% - 40px);
+	border: 0;
+	outline: none;
+	padding-left: 20px;
+	/* transparent无色 */
+	background-color: transparent;
+	color: white;
+	/* 将内边距的大小算到内容中去 */
+	box-sizing: border-box;
+}
+
+.search-icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-image: url(../../img/icon_btn_serach.png);
+	background-size: 100% 100%;
+	position: relative;
+	left: 12px;
+	top: 5px;
+}
+
+.sign {
+
+	width: 100%;
+	height: 50px;
+	position: relative;
+
+}
+
+.sign>.list_icon_calendar {
+
+	display: inline-block;
+	background-image: url(../../img/list_icon_calendar.png);
+	background-size: 100% 100%;
+	width: 30px;
+	height: 30px;
+	margin: 10px 10px 10px 10px;
+}
+
+.sign>.sign_text {
+	box-sizing: border-box;
+	line-height: 50px;
+	position: absolute;
+	font-size: small;
+}
+
+.sign>.icon_btn_signin {
+	background-image: url(../../img/icon_btn_signin.png);
+	background-size: 100% 100%;
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	right: 10px;
+	top: 10px;
+	box-sizing: border-box;
+}
+
+hr {
+	width: 100%;
+	position: absolute;
+	bottom: -10px;
+	opacity: 0.2;
+}
+
+.img {
+	width: 100%;
+	height: 100px;
+	position: relative;
+
+	margin: 0;
+	display: inline-block;
+}
+
+.img>span {
+	position: absolute;
+	background-size: 100% 100%;
+	width: 55px;
+	height: 55px;
+}
+
+.img>span:nth-of-type(1) {
+	background-image: url(../../img/mail/list_icon_medical.png);
+	left: 30px;
+	top: 15px;
+}
+
+.img>span:nth-of-type(2) {
+	left: calc((100% - 30px)/3);
+	top: 15px;
+	background-image: url(../../img/list_icon_health.png);
+}
+
+.img>span:nth-of-type(3) {
+	right: calc((100% - 30px)/3);
+	top: 15px;
+	background-image: url(../../img/mail/list_icon_yangsheng.png);
+}
+
+.img>span:nth-of-type(4) {
+	right: calc(30px);
+	top: 15px;
+	background-image: url(../../img/mail/list_icon_more_big.png);
+}
+
+
+.img>.img_text {
+	font-size: small;
+	top: 120px;
+	position: relative;
+
+}
+
+.img>.img_text>span:nth-of-type(1) {
+	left: 30px;
+	position: absolute;
+	bottom: 20px;
+}
+
+.img>.img_text>span:nth-of-type(2) {
+	left: calc((100% - 30px)/3);
+	position: absolute;
+	bottom: 20px;
+}
+
+.img>.img_text>span:nth-of-type(3) {
+	right: calc((100% - 30px)/3);
+	position: absolute;
+	bottom: 20px;
+}
+
+.img>.img_text>span:nth-of-type(4) {
+	right: calc(45px);
+	position: absolute;
+	bottom: 20px;
+}
+
+
+/* 积分兑换 */
+.hr2 {
+
+	width: 100%;
+
+	border-top: solid #eff2f5 10px;
+	margin-top: -10px;
+}
+
+.integral {
+	margin-top: 20px;
+}
+
+.integral-header {
+	position: relative;
+	height: 40px;
+	border-bottom: 1px solid gainsboro;
+	padding: 10px;
+	top: 2px;
+}
+
+.integral-header>h3 {
+	margin: 0;
+	line-height: 20px;
+}
+
+.integral-header>h3>img {
+	width: 5px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+.integral-header>span {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: green;
+}
+
+.integral-content-cell {
+	float: left;
+	height: 170px;
+	width: 50%;
+	border: 10px solid white;
+	margin-bottom: 15px;
+}
+
+.integral-content-cell>div {
+	position: relative;
+}
+
+.integral-content-cell>div:nth-of-type(1) {
+	height: 100%;
+
+}
+
+.integral-content-cell>div>img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.integral-content-cell-button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.7;
+	color: chartreuse;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.integral-content-cell-title {
+
+	line-height: 30px;
+	padding-left: 10px;
+
+}
+
+.integral-content-cell-integral {
+	position: relative;
+	right: -30px;
+	line-height: 30px;
+	color: red;
+}
+
+.integral>.integral-header :nth-of-type(2) {
+	position: absolute;
+	top: 30px;
+
+}
+
+.integral-content2 {
+	margin-top: 10px;
+
+}
+
+.recommend {
+	float: left;
+	height: 50%;
+	width: 50%;
+	border: 10px solid white;
+
+	margin-bottom: 15px;
+}
+
+.hr3 {
+	width: 100%;
+	float: left;
+	border-top: solid #eff2f5 10px;
+	margin-top: 10px;
+}
+
+.integral-header1 {
+	position: relative;
+	height: 40px;
+	top: 12px;
+	padding: 10px;
+
+}
+#products{
+	margin-top: -33px;
+	margin-left: 23px;
+}
+
+
+.integral-header1>span:nth-of-type(2) {
+	position: absolute;
+	right: 10px;
+	top: 390px;
+	color: green;
+}
+
+.hr4 {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	border-top: solid #cfd0d1 1px;
+	top: 425px;
+}
+
+.integral-content-cell1 {
+	float: left;
+	height: 170px;
+	width: 50%;
+	border: 10px solid white;
+	margin-bottom: 15px;
+	margin-top: 50px;
+}
+
+.integral-content-cell1>div {
+	position: relative;
+}
+
+.integral-content-cell1>div:nth-of-type(1) {
+	height: 100%;
+
+}
+
+.integral-content-cell1>div>img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.integral-content-cell1-row2 {
+	position: relative;
+	top: -50px;
+}
+
+.hr5 {
+	width: 100%;
+
+	left: 0px;
+	position: absolute;
+	border-top: solid #eceeee 10px;
+	bottom: -554px;
+}
+
+.footer {
+	height: 40px;
+	width: 100%;
+	position: relative;
+}
+
+.footer>img {
+	margin-top: -20px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+}
+
+.footer>span {
+	margin-left: 45px;
+	margin-top: -10px;
+}
+
+.footer>span:nth-of-type(2) {
+	margin-left: 26px;
+
+}
+
+.footer>span:nth-of-type(3) {
+	margin-left: 26px;
+}
+
+.footer>span {
+	margin-left: 45px;
+	margin-top: -10px;
+}
+
+a {
+
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+.content {
+	width: 100%;
+	height: 130px;
+
+	position: relative;
+
+}
+
+.content .pic a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.content .pic a.current {
+	display: block;
+}
+
+.indicator {
+	position: absolute;
+	left: 30%;
+	bottom: -80px;
+}
+
+.indicator>span {
+	background-color: blue;
+	color: white;
+	border-radius: 100%;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.indicator>span.active {
+	background-color: tomato;
+	border: 2px solid red;
+}
+
+.page {
+	position: absolute;
+	width: 324px;
+}
+
+.page>span {
+	display: inline-block;
+	background-color: rgba(1, 1, 1, 0.8);
+	width: 30px;
+	height: 30px;
+	line-height: 27px;
+	margin-right: 6px;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+
+}
+
+.page>span:hover {
+	background-color: rgba(100, 100, 100, 0.8);
+
+}
+
+.prev {
+	margin-top: 10px;
+	margin-left: -20px;
+	float: left;
+}
+
+.next {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+.pic>a>img {
+	float: left;
+	width: 375px;
+	height: 130px;
+
+}

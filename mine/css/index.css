@@ -1,0 +1,226 @@
+body {
+    margin: 0 auto;
+}
+
+p:nth-of-type(1) {
+    position: absolute;
+    text-align: center;
+    font-size: large;
+    left: 42%;
+    top: -30px;
+    display: inline-block;
+    z-index: 99999999;
+}
+
+p:nth-of-type(2) {
+    line-height: 25px;
+    position: absolute;
+    right: 5px;
+    font-size: small;
+    display: inline-block;
+    top: -30px;
+    z-index: 99999999;
+}
+
+
+.title {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    top: 45px;
+    background-color: rgb(1, 255, 98);
+}
+
+.title>img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: absolute;
+    left: calc((100% - 70px) / 2);
+    top: 20px;
+}
+
+.title>span {
+    text-align: center;
+    position: relative;
+    opacity: 0.9;
+}
+
+.title>span:nth-of-type(1) {
+    position: absolute;
+    left: 36%;
+    top: 86px;
+    color: white;
+}
+
+.title>span:nth-of-type(2) {
+    color: white;
+    font-size: small;
+    position: absolute;
+    left: 47%;
+    top: 90px;
+}
+
+.title>span:nth-of-type(3) {
+    display: block;
+    color: white;
+    font-size: small;
+    top: 110px;
+}
+
+.button {
+    position: absolute;
+    top: 195px;
+    left: 0;
+    background-color: black;
+    opacity: 0.15;
+    color: white;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.button>span:nth-of-type(1) {
+    position: absolute;
+    left: 10%;
+    font-size: small;
+}
+
+.button>span:nth-of-type(2) {
+    position: absolute;
+    left: 42%;
+    font-size: small;
+}
+
+.button>span:nth-of-type(3) {
+    position: absolute;
+    left: 72%;
+    font-size: small;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 50px;
+}
+
+.content>img {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 5px 10px;
+}
+
+.content>span:nth-of-type(1) {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-size: 13px;
+}
+
+.content>span:nth-of-type(2) {
+    position: absolute;
+    top: 8px;
+    right: 35px;
+    font-size: 10px;
+    opacity: 0.3;
+}
+
+.content-img>img {
+    position: absolute;
+    top: 270px;
+    width: 25px;
+    height: 25px;
+    left: 40px;
+
+}
+
+.content-img>img:nth-of-type(2) {
+    left: 35%;
+}
+
+.content-img>img:nth-of-type(3) {
+    left: 58%;
+}
+
+.content-img>img:nth-of-type(4) {
+    left: 81%;
+}
+
+.pay {
+    position: absolute;
+
+    width: 100%;
+    height: 18px;
+    top: 295px;
+}
+
+.pay>span {
+    margin-left: 30px;
+    font-size: smaller;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+.card {
+    position: absolute;
+    top: 340px;
+    width: 100%;
+    height: 25px;
+
+}
+
+.card>img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.card>span {
+
+    font-size: small;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+}
+
+.card>span:nth-of-type(2) {
+    opacity: 0.2;
+    font-size: small;
+    position: absolute;
+    top: 5px;
+    left: 300px;
+}
+
+.low>.card:nth-of-type(2) {
+    top: 380px;
+}
+
+.low>.card:nth-of-type(3) {
+    top: 420px;
+}
+
+.low>.card:nth-of-type(4) {
+    top: 460px;
+}
+
+.low>.card:nth-of-type(5) {
+    top: 500px;
+}
+
+.low>.card:nth-of-type(6) {
+    top: 540px;
+}
+
+.low>.card:nth-of-type(7) {
+    top: 580px;
+    position: absolute;
+}
+p {
+    float: left;
+    margin-top: 42px;
+    margin-left: 6px;
+    font-size: xx-small;
+}
+
+
